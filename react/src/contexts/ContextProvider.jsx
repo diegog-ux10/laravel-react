@@ -22,14 +22,12 @@ export const ContextProvider = ({children}) => {
       localStorage.removeItem('ACCESS_TOKEN');
     }
   }
-
-  let SetToken;
   return (
     <StateContext.Provider value={{
       user,
       token,
       setUser,
-      SetToken
+      setToken
     }}>
       {children}
     </StateContext.Provider>
